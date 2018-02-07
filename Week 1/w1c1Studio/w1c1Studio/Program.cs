@@ -30,7 +30,6 @@ namespace Area
                 Console.WriteLine("Input cannot be a negative number. Sorry, try again later.");
                 Console.ReadLine();
             }
-            
         }
     }
 }
