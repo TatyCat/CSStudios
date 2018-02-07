@@ -33,3 +33,8 @@ namespace Area
         }
     }
 }
+
+/*
+ *Bonus Mission #2:
+ Add validation to your program. If the user enters a negative number, print an error message and quit.
+ */
