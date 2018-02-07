@@ -8,19 +8,29 @@ namespace Area
         {
             //tell the user to enter a radius
             Console.WriteLine("Provide a number for radius");
+
             string inputRad = Console.ReadLine();
 
             //convert the input into a number
             decimal radius = decimal.Parse(inputRad);
 
-            //Calculates the area of a circle with the radius input
-            decimal pi = 3.14m; 
-            decimal area = pi * radius * radius;
+            //Validation: Not a negative number
+            if (radius >= 0)
+            {
+                //Calculates the area of a circle with the radius input
+                decimal pi = 3.14m;
+                decimal area = pi * radius * radius;
 
-            //Output
-            Console.WriteLine($"The area of your circle is {area}");
-     
-            Console.ReadLine();
+                //Output
+                Console.WriteLine($"The area of your circle is {area}");
+                Console.ReadLine();
+            }
+            else
+            { 
+                Console.WriteLine("Input cannot be a negative number. Sorry, try again later.");
+                Console.ReadLine();
+            }
+            
         }
     }
 }
